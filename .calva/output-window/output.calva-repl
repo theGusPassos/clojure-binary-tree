@@ -18,148 +18,22 @@
 clj꞉binary-tree-clojure.core꞉>  ; Use `alt+enter` to evaluate
 ; Jack-in done.
 clj꞉binary-tree-clojure.core꞉> 
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/is-greater?
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/is-smaller?
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/is-same?
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-right-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
+; Evaluating file: core.clj
 #'binary-tree-clojure.core/-main
 clj꞉binary-tree-clojure.core꞉> 
+(-main)
 🌳 binary tree 🌳 
 
  enter a non numeric value to exit
-exiting...
-nil
-clj꞉binary-tree-clojure.core꞉> 
-true
-clj꞉binary-tree-clojure.core꞉> 
-false
-clj꞉binary-tree-clojure.core꞉> 
-1
-clj꞉binary-tree-clojure.core꞉> 
-; Execution error (NumberFormatException) at java.lang.NumberFormatException/forInputString (REPL:-1).
-; For input string: "a1"
-clj꞉binary-tree-clojure.core꞉> 
-; Syntax error (IllegalArgumentException) compiling try at (c:\Users\Gustavo\Documents\_me\programming\binary-tree-clojure\binary-tree-clojure\src\binary_tree_clojure\core.clj:34:3).
-; Unable to resolve classname: (println "exiting...")
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting...
-nil
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-is number
-No input provided.
-exiting...
-nil
-clj꞉binary-tree-clojure.core꞉> 
-; Syntax error compiling at (c:\Users\Gustavo\Documents\_me\programming\binary-tree-clojure\binary-tree-clojure\src\binary_tree_clojure\core.clj:26:6).
-; Unable to resolve symbol: value in this context
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/create-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/create-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting...
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
+new root {:value 1}
+new root {:value 1, :right {:value 2}}
+new root {:value 1, :right {:value 2, :right {:value 3}}}
+new root {:value 1, :right {:value 2, :right {:value 3, :right {:value 4}}}}
 exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil
-   :at [clojure.lang.Numbers ops Numbers.java 1068]}]
- :trace
- [[clojure.lang.Numbers ops Numbers.java 1068]
-  [clojure.lang.Numbers gt Numbers.java 259]
-  [binary_tree_clojure.core$is_greater_QMARK_ invokeStatic form-init4528874849362651353.clj 5]
-  [binary_tree_clojure.core$add_node invokeStatic form-init4528874849362651353.clj 17]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7319 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7319 invoke form-init4528874849362651353.clj 45]
-  [clojur
-e.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middlewar
-e.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-1
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-No input provided.
-exiting... #error {
- :cause For input string: ""
+ :cause For input string: "a"
  :via
  [{:type java.lang.NumberFormatException
-   :message For input string: ""
+   :message For input string: "a"
    :at [java.lang.NumberFormatException forInputString nil -1]}]
  :trace
  [[java.lang.NumberFormatException forInputString nil -1]
@@ -170,14 +44,18 @@ exiting... #error {
   [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
   [java.lang.reflect.Constructor newInstance nil -1]
   [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [
-clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7324 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7324 invoke form-init4528874849362651353.clj 45]
+  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 28]
+  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 28]
+  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 28]
+  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 28]
+  [binary_tree_clojure.core$add_node_from_user_input in
+vokeStatic core.clj 28]
+  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 28]
+  [binary_tree_clojure.core$_main invokeStatic core.clj 36]
+  [binary_tree_clojure.core$_main doInvoke core.clj 36]
+  [clojure.lang.RestFn invoke RestFn.java 397]
+  [binary_tree_clojure.core$eval7297 invokeStatic form-init5382101393117288718.clj 24]
+  [binary_tree_clojure.core$eval7297 invoke form-init5382101393117288718.clj 24]
   [clojure.lang.Compiler eval Compiler.java 7177]
   [clojure.lang.Compiler eval Compiler.java 7132]
   [clojure.core$eval invokeStatic core.clj 3214]
@@ -188,309 +66,8 @@ clojure.lang.RestFn invoke RestFn.java 397]
   [clojure.core$apply invokeStatic core.clj 665]
   [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
   [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke
- main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil
-   :at [clojure.lang.Numbers ops Numbers.java 1068]}]
- :trace
- [[clojure.lang.Numbers ops Numbers.java 1068]
-  [clojure.lang.Numbers gt Numbers.java 259]
-  [binary_tree_clojure.core$is_greater_QMARK_ invokeStatic form-init4528874849362651353.clj 5]
-  [binary_tree_clojure.core$add_node invokeStatic form-init4528874849362651353.clj 17]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 27]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7326 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7326 invoke form-init4528874849362651353.clj 45]
-  [clojur
-e.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middlewar
-e.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-1
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-{}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-{:right 1}
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/create-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/create-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-{}
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-true
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-false
-clj꞉binary-tree-clojure.core꞉> 
-true
-clj꞉binary-tree-clojure.core꞉> 
-; Syntax error macroexpanding clojure.core/cond at (c:\Users\Gustavo\Documents\_me\programming\binary-tree-clojure\binary-tree-clojure\src\binary_tree_clojure\core.clj:19:3).
-; cond requires an even number of forms
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/create-node
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-{}
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-new-root {:value 1}
-new-root {:value 2}
-new-root {:value 1}
-new-root {:value 2}
-new-root {:value 3}
-exiting... #error {
- :cause For input string: "a"
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: "a"
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.co
-re$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 36]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 36]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7370 invokeStatic form-init4528874849362651353.clj 46]
-  [binary_tree_clojure.core$eval7370 invoke form-init4528874849362651353.clj 46]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn app
-lyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thr
-ead run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-new-root {:value 1}
-new-root {:value 2}
-new-root {:value 1}
-exiting... #error {
- :cause For input string: "a"
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: "a"
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.co
-re$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 28]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 36]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 36]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7373 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7373 invoke form-init4528874849362651353.clj 45]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lan
-g.RestFn invoke RestFn.java 425]
+  [clojure.lang.RestFn invoke RestFn.
+java 425]
   [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
   [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
   [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
@@ -505,398 +82,66 @@ g.RestFn invoke RestFn.java 425]
   [java.lang.Thread run nil -1]]}
 nil
 clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
+#'binary-tree-clojure.core/add-node-in
 clj꞉binary-tree-clojure.core꞉> 
+#'binary-tree-clojure.core/add-node
+clj꞉binary-tree-clojure.core꞉> 
+; Evaluating file: core.clj
 #'binary-tree-clojure.core/-main
 clj꞉binary-tree-clojure.core꞉> 
+(-main)
 🌳 binary tree 🌳 
 
  enter a non numeric value to exit
-current root nil
+exiting...
+nil
+clj꞉binary-tree-clojure.core꞉> 
+(-main)
+; Evaluating file: core.clj
+#'binary-tree-clojure.core/-main
+clj꞉binary-tree-clojure.core꞉> 
+(-main)
+🌳 binary tree 🌳 
+
+ enter a non numeric value to exit
 new root {:value 1}
-current root {:value 1}
-new root {:value 2}
-current root {:value 2}
-exiting... #error {
- :cause For input string: "a"
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: "a"
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.co
-re$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7377 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7377 invoke form-init4528874849362651353.clj 45]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interru
-ptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node-from-user-input
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-current root nil
-new root {:value 1}
-current root {:value 1}
-new root {:value 2}
-current root {:value 2}
-new root {:value 3}
-current root {:value 3}
-new root {:value 4}
-current root {:value 4}
-new root {:value 5}
-current root {:value 5}
-new root {:value 6}
-current root {:value 6}
-exiting... #error {
- :cause For input string: "a"
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: "a"
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.co
-re$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7382 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7382 invoke form-init4528874849362651353.clj 45]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 in
-voke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$ses
-sion_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-current root nil
-new root {:value 1}
-current root {:value 1}
-new root {:value 2}
-current root {:value 2}
-new root {:value -1}
-current root {:value -1}
-new root {:value 2}
-current root {:value 2}
-new root {:value 4}
-current root {:value 4}
-new root {:value 1}
-current root {:value 1}
-new root {:value 2}
-current root {:value 2}
+new root {:value 1, :right {:value 2}}
+new root {:value 1, :right {:value 2}, :left {:value -1}}
 No input provided.
-exiting... #error {
- :cause For input string: ""
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: ""
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core
-$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic form-init4528874849362651353.clj 26]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 35]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7386 invokeStatic form-init4528874849362651353.clj 45]
-  [binary_tree_clojure.core$eval7386 invoke form-init4528874849362651353.clj 45]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [cloju
-re.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.
-session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
+exiting...
 nil
 clj꞉binary-tree-clojure.core꞉> 
 ; Evaluating file: core.clj
-🌳 binary tree 🌳 
-
- enter a non numeric value to exit
-current root nil
-new root {:value 1}
-current root {:value 1}
-new root {:value 1, :right {:value 2}}
-current root {:value 1, :right {:value 2}}
-new root {:value 1, :right {:value 3}}
-current root {:value 1, :right {:value 3}}
-No input provided.
-exiting... #error {
- :cause For input string: ""
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: ""
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$_main invokeStat
-ic core.clj 35]
-  [binary_tree_clojure.core$_main doInvoke core.clj 35]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7411 invokeStatic core.clj 45]
-  [binary_tree_clojure.core$eval7411 invoke core.clj 45]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler load Compiler.java 7636]
-  [binary_tree_clojure.core$eval7391 invokeStatic form-init4528874849362651353.clj 1]
-  [binary_tree_clojure.core$eval7391 invoke form-init4528874849362651353.clj 1]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindi
-ngs_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-No input provided.
-; Syntax error (NumberFormatException) compiling at (c:\Users\Gustavo\Documents\_me\programming\binary-tree-clojure\binary-tree-clojure\src\binary_tree_clojure\core.clj:47:1).
-; For input string: ""
-; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
-
-clj꞉binary-tree-clojure.core꞉> 
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-right-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-right-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
 #'binary-tree-clojure.core/-main
 clj꞉binary-tree-clojure.core꞉> 
+(-main)
 🌳 binary tree 🌳 
 
  enter a non numeric value to exit
-current root nil
-new root {:value 1}
-current root {:value 1}
-new root {:value 1, :right {:value 2}}
-current root {:value 1, :right {:value 2}}
-new root {:value 1, :right {:value 3}}
-current root {:value 1, :right {:value 3}}
-new root {:value 1, :right {:value 4}}
-current root {:value 1, :right {:value 4}}
-exiting... #error {
- :cause For input string: "a"
- :via
- [{:type java.lang.NumberFormatException
-   :message For input string: "a"
-   :at [java.lang.NumberFormatException forInputString nil -1]}]
- :trace
- [[java.lang.NumberFormatException forInputString nil -1]
-  [java.lang.Integer parseInt nil -1]
-  [java.lang.Integer <init> nil -1]
-  [sun.reflect.GeneratedConstructorAccessor1 newInstance nil -1]
-  [sun.reflect.DelegatingConstructorAccessorImpl newInstance nil -1]
-  [java.lang.reflect.Constructor newInstance nil -1]
-  [clojure.lang.Reflector invokeConstructor Reflector.java 305]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$add_node_from_
-user_input invokeStatic core.clj 26]
-  [binary_tree_clojure.core$_main invokeStatic form-init4528874849362651353.clj 38]
-  [binary_tree_clojure.core$_main doInvoke form-init4528874849362651353.clj 38]
-  [clojure.lang.RestFn invoke RestFn.java 397]
-  [binary_tree_clojure.core$eval7419 invokeStatic form-init4528874849362651353.clj 48]
-  [binary_tree_clojure.core$eval7419 invoke form-init4528874849362651353.clj 48]
-  [clojure.lang.Compiler eval Compiler.java 7177]
-  [clojure.lang.Compiler eval Compiler.java 7132]
-  [clojure.core$eval invokeStatic core.clj 3214]
-  [clojure.core$eval invoke core.clj 3210]
-  [nrepl.middleware.interruptible_eval$evaluate$fn__953$fn__954 invoke interruptible_eval.clj 87]
-  [clojure.lang.AFn applyToHelper AFn.java 152]
-  [clojure.lang.AFn applyTo AFn.java 144]
-  [clojure.core$apply invokeStatic core.clj 665]
-  [clojure.core$with_bindings_STAR_ invokeStatic core.clj 1973]
-  [clojure.core$with_bindings_STAR_ doInvoke core.clj 1973]
-  [clojure.lang.RestFn invoke RestFn.java 425]
-  [nrepl
-.middleware.interruptible_eval$evaluate$fn__953 invoke interruptible_eval.clj 87]
-  [clojure.main$repl$read_eval_print__9086$fn__9089 invoke main.clj 437]
-  [clojure.main$repl$read_eval_print__9086 invoke main.clj 437]
-  [clojure.main$repl$fn__9095 invoke main.clj 458]
-  [clojure.main$repl invokeStatic main.clj 458]
-  [nrepl.middleware.interruptible_eval$evaluate invokeStatic interruptible_eval.clj 115]
-  [nrepl.middleware.interruptible_eval$interruptible_eval$fn__984$fn__988 invoke interruptible_eval.clj 150]
-  [clojure.lang.AFn run AFn.java 22]
-  [nrepl.middleware.session$session_exec$main_loop__1051$fn__1055 invoke session.clj 202]
-  [nrepl.middleware.session$session_exec$main_loop__1051 invoke session.clj 201]
-  [clojure.lang.AFn run AFn.java 22]
-  [java.lang.Thread run nil -1]]}
-nil
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-right-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/add-node
-clj꞉binary-tree-clojure.core꞉> 
-#'binary-tree-clojure.core/-main
-clj꞉binary-tree-clojure.core꞉> 
-🌳 binary tree 🌳 
+new root
+ {:value 1} 
 
- enter a non numeric value to exit
-current root nil
-new root {:value 1}
-current root {:value 1}
-new root {:value 1, :right {:value 2}}
-current root {:value 1, :right {:value 2}}
-new root {:value 1, :right {:value 3}}
-current root {:value 1, :right {:value 3}}
-new root {:value 1, :right {:value 4}}
-current root {:value 1, :right {:value 4}}
-new root {:value 1, :right {:value 5}}
-current root {:value 1, :right {:value 5}}
-new root {:else 1}
-current root {:else 1}
-exiting... #error {
- :cause nil
- :via
- [{:type java.lang.NullPointerException
-   :message nil}]
- :trace
- []}
+
+new root
+ {:value 1, :right {:value 2}} 
+
+
+new root
+ {:value 1, :right {:value 2, :right {:value 3}}} 
+
+
+new root
+ {:value 1, :right {:value 2, :right {:value 3}}, :left {:value -1}} 
+
+
+new root
+ {:value 1, :right {:value 2, :right {:value 3}}, :left {:value -1, :left {:value -5}}} 
+
+
+new root
+ {:value 1, :right {:value 2, :right {:value 3}}, :left {:value -1, :left {:value -5, :right {:value -3}}}} 
+
+
+exiting...
 nil
 clj꞉binary-tree-clojure.core꞉> 
